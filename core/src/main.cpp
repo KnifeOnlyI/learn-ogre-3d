@@ -1,8 +1,12 @@
-#include <iostream>
+#include "app/App.hpp"
 
 int main()
 {
-    std::cout << "Hello World !\n";
+    og::App app {"Learn Ogre3D"};
+
+    app.initApp();
+    app.getRoot()->startRendering();
+    app.closeApp();
 
     return 0;
 }
